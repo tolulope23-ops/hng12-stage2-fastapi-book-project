@@ -25,5 +25,5 @@ jobs:
 
     - name: Run tests
       run: |
-        . env/bin/activate
-        pytest
+        source venv/bin/activate
+        pytest --maxfail=1 --disable-warnings
